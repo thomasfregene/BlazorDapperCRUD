@@ -28,6 +28,8 @@ namespace BlazorDapperCRUD
             services.AddRazorPages();
             services.AddServerSideBlazor();
 
+            services.AddScoped<IVideoService, VideoService>();
+
             //SQL database connection (name defined in appsettings.json)
             var SqlConnectionConfiguration = new SqlConnectionConfiguration(Configuration.GetConnectionString("SqlDBcontext"));
             services.AddSingleton(SqlConnectionConfiguration);
