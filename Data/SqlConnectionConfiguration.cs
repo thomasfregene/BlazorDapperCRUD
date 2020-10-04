@@ -8,6 +8,6 @@ namespace BlazorDapperCRUD.Data
     public class SqlConnectionConfiguration
     {
         public SqlConnectionConfiguration(string value) => Value = value;
-        public string value { get;}
+        public string Value { get;}
     }
 }
